@@ -455,10 +455,11 @@ body{background:var(--carvao);font-family:'EB Garamond',Georgia,serif;min-height
 
 
 <script>
+// LINKS REAIS DO GITHUB (Sem o erro 404 e sem o ../)
 const ESCHATON_ROUTES = {
-    volume1: '../eschaton/index.html',
-    volume2: '../eschaton-v2/index.html',
-    volume3: './index.html'
+    volume1: 'https://igrejamanancialdevida.github.io/li-esebd/',
+    volume2: 'https://igrejamanancialdevida.github.io/li-esebd-v.2-/',
+    volume3: 'https://igrejamanancialdevida.github.io/li-esebd-v.3/'
 };
 
 const ESCHATON_CURRENT_VOLUME = 'volume3';
@@ -469,15 +470,12 @@ function configurarIntegracaoVolumes() {
         const rota = ESCHATON_ROUTES[destino];
         if (!rota) return;
         elemento.setAttribute('href', rota);
-        if (destino !== ESCHATON_CURRENT_VOLUME) {
-            elemento.setAttribute('title', 'Abrir ' + destino.replace('volume', 'Volume '));
-        }
     });
 }
 
 document.addEventListener('DOMContentLoaded', configurarIntegracaoVolumes);
 </script>
-<script src="navegacao.js"></script>
+
 <script src="https://igrejamanancialdevida.github.io/li-esebd/navegacao.js"></script>
 </body>
 </html>
