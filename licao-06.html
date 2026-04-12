@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eschaton Vol.3 · Licao 06 — Os Selos, os Cavaleiros e os Selados</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cor:#305080;--grad1:#0a1018;--grad2:#101828;--ouro:#c9a84c;--ouro-claro:#e8d5a0;--vermelho:#8b1a1a;--ct:#2a2a2a;--branco:#fdfbf7;--perg:#f8f0e0;--creme:#f0e4cc;--cc:#ddd0c0;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#060c10;font-family:'EB Garamond',Georgia,serif;}
+.painel{position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(90deg,#030608,#060c10);border-bottom:1px solid rgba(48,80,128,0.5);padding:10px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.marca{font-family:'Cinzel',serif;font-size:11pt;color:var(--ouro);letter-spacing:3px;margin-right:auto;}
+.marca span{font-family:'Oswald',sans-serif;font-size:7.5pt;color:#666;letter-spacing:1px;display:block;font-weight:300;}
+.btn{font-family:'Oswald',sans-serif;font-size:9pt;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;padding:7px 16px;border-radius:2px;transition:all 0.2s;white-space:nowrap;}
+.be{background:transparent;color:var(--ouro);border:1px solid rgba(201,168,76,0.4);}.be:hover{background:var(--ouro);color:#111;}
+.bi{background:var(--vermelho);color:#fff;}.bi:hover{filter:brightness(1.2);}
+.bv{background:transparent;color:#666;border:1px solid #333;font-size:8pt;}.bv:hover{color:#fff;border-color:#555;}
+.area{margin-top:60px;padding:24px 16px 60px;display:flex;flex-direction:column;align-items:center;gap:16px;}
+@page{size:A5 portrait;margin:0;}
+.pag{width:148mm;min-height:210mm;background:var(--perg);box-shadow:0 6px 30px rgba(0,0,0,0.6);position:relative;overflow:hidden;page-break-after:always;flex-shrink:0;}
+.lbl{font-family:'Oswald',sans-serif;font-size:8pt;color:#555;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;margin-left:calc(50% - 74mm);margin-bottom:-8px;}
+.capa{background:linear-gradient(160deg,var(--grad1),var(--grad2));display:flex;flex-direction:column;justify-content:flex-end;min-height:210mm;padding:0;}
+.catm{position:absolute;inset:0;background:radial-gradient(ellipse at 22% 60%,rgba(48,80,128,0.5) 0%,transparent 55%),radial-gradient(ellipse at 78% 20%,rgba(201,168,76,0.18) 0%,transparent 45%);}
+.cgrd{position:absolute;inset:0;opacity:0.025;background-image:repeating-linear-gradient(45deg,rgba(201,168,76,0.8) 0px,transparent 1px,transparent 28px,rgba(201,168,76,0.8) 29px);}
+.cfx{position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#101828,var(--cor),var(--ouro));}
+.cnbg{position:absolute;bottom:-20px;right:-10px;font-family:'Cinzel',serif;font-size:130pt;font-weight:900;color:rgba(255,255,255,0.03);line-height:1;user-select:none;}
+.cimg{position:absolute;top:0;left:0;right:0;height:58%;background:linear-gradient(160deg,#040810,var(--cor) 50%,#90c0ff);opacity:0.38;}
+.clh{position:absolute;top:55%;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.75;}
+.cvol{position:absolute;top:14mm;right:12mm;z-index:4;text-align:right;}
+.cvol-num{font-family:'Cinzel',serif;font-size:8pt;color:var(--ouro);letter-spacing:3px;opacity:0.7;}
+.cvol-linha{width:40px;height:1px;background:rgba(201,168,76,0.4);margin:4px 0 0 auto;}
+.ccon{position:relative;z-index:3;padding:0 12mm 14mm 18mm;}
+.cser{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:4px;color:var(--ouro);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.cser::before{content:'';display:block;width:20px;height:1px;background:var(--ouro);}
+.ctit{font-family:'Cinzel',serif;font-size:17pt;font-weight:700;color:#fff;line-height:1.1;text-transform:uppercase;margin-bottom:10px;}
+.cref{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;color:rgba(201,168,76,0.6);text-transform:uppercase;margin-bottom:10px;}
+.cver{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:var(--ouro-claro);line-height:1.6;border-left:2px solid var(--ouro);padding-left:10px;opacity:0.9;}
+.int{padding:14mm 12mm 18mm 14mm;min-height:210mm;position:relative;background:var(--perg);}
+.int::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--cor),var(--ouro) 60%,transparent);}
+.int::after{content:'';position:absolute;top:6px;left:14mm;right:12mm;height:1px;background:rgba(48,80,128,0.15);}
+.int-linhas{position:absolute;inset:0;top:20mm;pointer-events:none;background-image:repeating-linear-gradient(transparent,transparent 23px,rgba(48,80,128,0.045) 23px,rgba(48,80,128,0.045) 24px);z-index:0;}
+.wm{position:absolute;bottom:14mm;right:10mm;font-family:'Cinzel',serif;font-size:52pt;font-weight:900;color:rgba(0,0,0,0.03);line-height:1;user-select:none;pointer-events:none;}
+.ph{margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--cc);display:flex;justify-content:space-between;align-items:baseline;position:relative;z-index:1;}
+.phl{font-family:'Oswald',sans-serif;font-size:7.5pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;}
+.pht{font-family:'EB Garamond',serif;font-style:italic;font-size:8.5pt;color:#aaa;}
+h2{font-family:'Cinzel',serif;font-weight:700;font-size:13pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);border-bottom:2px solid var(--cor);padding-bottom:6px;margin-bottom:12px;margin-top:4px;line-height:1.2;position:relative;z-index:1;}
+h3{font-family:'Oswald',sans-serif;font-weight:400;font-size:10pt;letter-spacing:1.5px;color:#182840;text-transform:uppercase;margin-bottom:6px;margin-top:12px;position:relative;z-index:1;}
+p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--ct);text-align:justify;margin-bottom:9px;hyphens:auto;position:relative;z-index:1;}
+.cap::first-letter{font-family:'Cinzel',serif;font-size:38pt;font-weight:900;float:left;margin-right:5px;color:var(--cor);line-height:0.82;padding-top:2px;}
+.bver{background:#fff;border:1px solid rgba(48,80,128,0.2);border-left:4px solid var(--cor);padding:10px 12px;margin:12px 0;position:relative;z-index:1;}
+.bver-ref{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.bver p{font-family:'EB Garamond',serif;font-style:italic;font-size:10.5pt;color:#101828;line-height:1.7;margin:0;}
+.bver .ref-f{font-size:9pt;font-style:normal;color:var(--ouro);font-family:'Oswald',sans-serif;letter-spacing:1px;display:block;text-align:right;margin-top:4px;}
+.bloco{background:rgba(48,80,128,0.05);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-t{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.blteo{background:rgba(201,168,76,0.08);border-left:3px solid var(--ouro);padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.blteo-t{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;}
+.blapl{background:linear-gradient(135deg,rgba(48,80,128,0.05),rgba(201,168,76,0.07));border:1px solid rgba(48,80,128,0.2);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.blapl-t{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.mem{background:var(--creme);border:1px solid rgba(201,168,76,0.3);border-radius:2px;padding:10px 12px;margin:10px 0;text-align:center;position:relative;z-index:1;}
+.mem-t{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:6px;}
+.mem p{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:#101828;text-align:center;line-height:1.6;}
+.tabela{width:100%;border-collapse:collapse;margin:10px 0;position:relative;z-index:1;font-size:9pt;}
+.tabela th{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);background:rgba(48,80,128,0.07);padding:5px 7px;border-bottom:2px solid var(--cor);text-align:left;}
+.tabela td{font-family:'EB Garamond',serif;font-size:9.5pt;color:var(--ct);padding:4px 7px;border-bottom:1px solid rgba(48,80,128,0.1);vertical-align:top;line-height:1.4;}
+.tabela tr:last-child td{border-bottom:none;}
+.tabela td:first-child{font-family:'Oswald',sans-serif;font-weight:600;color:var(--cor);white-space:nowrap;}
+.obj{background:var(--creme);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.obj ul{list-style:none;padding:0;}
+.obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
+.obj ul li::before{content:'&#9670;';position:absolute;left:0;color:var(--cor);font-size:7pt;top:4px;}
+.sep{display:flex;align-items:center;gap:10px;margin:12px 0;opacity:0.3;position:relative;z-index:1;}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:var(--cor);}
+.sep span{font-size:8pt;color:var(--ouro);}
+.q{margin-bottom:14px;position:relative;z-index:1;}
+.qn{font-family:'Oswald',sans-serif;font-size:8pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.qt{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.45;margin-bottom:5px;}
+.lr{border-bottom:1px solid rgba(48,80,128,0.2);height:20px;margin-top:3px;}
+.rod{position:absolute;bottom:0;left:0;right:0;padding:6px 12mm 6mm 14mm;display:flex;justify-content:space-between;align-items:center;z-index:2;}
+.rod::before{content:'';position:absolute;top:0;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.3;}
+.rt{font-family:'Oswald',sans-serif;font-size:7pt;color:#aaa;letter-spacing:1px;text-transform:uppercase;}
+.rn{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);}
+.lins{display:flex;flex-direction:column;gap:18px;margin-top:10px;position:relative;z-index:1;}
+.lin{border-bottom:1px solid rgba(48,80,128,0.2);height:22px;}
+[contenteditable="true"]{outline:none;cursor:text;}
+[contenteditable="true"]:hover{background:rgba(48,80,128,0.05);border-radius:2px;}
+[contenteditable="true"]:focus{background:rgba(48,80,128,0.08);border-radius:2px;}
+@media print{
+    body{background:none;}
+    .painel,.lbl{display:none!important;}
+    .area{margin-top:0;padding:0;gap:0;}
+    .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
+    .wm,.int-linhas{display:none;}
+}
+</style>
+</head>
+<body>
+<div class="painel">
+    <div class="marca">ESCHATON VOL. III<span>Licao 06 &middot; Os Selos, os Cavaleiros e os Selados</span></div>
+    <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
+    <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
+    <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
+</div>
+<div class="area">
+
+<!-- PG 1 CAPA -->
+<div class="lbl">Pagina 1 &middot; Capa</div>
+<div class="pag capa">
+    <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
+    <div class="cimg"></div><div class="clh"></div>
+    <div class="cnbg">06</div>
+    <div class="cvol"><div class="cvol-num">VOL. III</div><div class="cvol-linha"></div></div>
+    <div class="ccon">
+        <div class="cser">Eschaton &middot; O Futuro Chegou</div>
+        <div class="cref">Apocalipse 6:1-17 &middot; 7:1-17</div>
+        <div class="ctit">Os Selos, os Cavaleiros e os Selados</div>
+        <div class="cver">
+            "A historia nao esta a deriva como um barco sem leme. O Cordeiro governa! Todos os eventos acontecem porque Ele conhece, determina, permite e controla. Ate os inimigos estao debaixo da autoridade do Cordeiro."
+            <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Hernandes Dias Lopes</span>
+        </div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">1</span></div>
+</div>
+
+<!-- PG 2 TEXTO BIBLICO -->
+<div class="lbl">Pagina 2 &middot; Texto Biblico</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">2</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. III</span><span class="pht">Os Selos e os Selados</span></div>
+    <h2>O Texto</h2>
+    <div class="bver">
+        <div class="bver-ref">Apocalipse 6:9-10</div>
+        <p>"E quando abriu o quinto selo, vi debaixo do altar as almas dos que tinham sido mortos por causa da palavra de Deus e por causa do testemunho que sustentavam. E clamavam em grande voz, dizendo: Ate quando, Senhor, santo e verdadeiro, nao julgas e vingas o nosso sangue nos que habitam na terra?"</p>
+        <span class="ref-f">Apocalipse 6:9-10</span>
+    </div>
+    <div class="bver">
+        <div class="bver-ref">Apocalipse 7:9,14</div>
+        <p>"Depois destas cousas, vi uma grande multidao que ninguem podia numerar, de todas as nacoes, tribos, povos e linguas... vestidos de vestiduras brancas e com palmas nas suas maos... Estes sao os que vêm da grande tribulacao, e lavaram as suas vestiduras e as branquearam no sangue do Cordeiro."</p>
+        <span class="ref-f">Apocalipse 7:9,14</span>
+    </div>
+    <div class="obj">
+        <div class="ot">Objetivos desta licao</div>
+        <ul>
+            <li>Compreender os quatro cavaleiros como descricao da era presente da Igreja</li>
+            <li>Examinar o quinto selo — os martires que clamam por justica debaixo do altar</li>
+            <li>Identificar os selados de Deus como a Igreja protegida na tribulacao</li>
+            <li>Contemplar a visao da multidao incontavel como destino eterno do povo de Deus</li>
+        </ul>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">2</span></div>
+</div>
+
+<!-- PG 3 OS QUATRO CAVALEIROS -->
+<div class="lbl">Pagina 3 &middot; Os Quatro Cavaleiros</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">3</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. III</span><span class="pht">Os Quatro Cavaleiros</span></div>
+    <h2>Os Quatro Cavaleiros do Apocalipse</h2>
+    <p class="cap">Os sete selos descrevem movimentos que caracterizarao a era inteira da Igreja — desde a ascensao ate o regresso glorioso de Cristo. O Cordeiro abre os selos. Ele esta encarregado de todo o programa. A historia esta em Suas maos. E do trono que sai a ordem para os cavaleiros.</p>
+    <table class="tabela">
+        <tr>
+            <th>Cavaleiro</th>
+            <th>Significado segundo H. D. Lopes</th>
+        </tr>
+        <tr>
+            <td>Branco</td>
+            <td>Cristo vencedor — o evangelho avancando vitoriosamente pelo mundo. O branco sempre ligado a Cristo (1:14; 19:11); a coroa e stephanos, usada para Cristo e santos, nunca para o anticristo</td>
+        </tr>
+        <tr>
+            <td>Vermelho</td>
+            <td>Perseguicao religiosa — a guerra do mundo contra a Igreja ao longo dos seculos. Entre 100.000 e 200.000 cristaos morreram nos 249 anos de perseguicao romana. O maior numero de martires da historia foi morto no seculo XX</td>
+        </tr>
+        <tr>
+            <td>Preto</td>
+            <td>Pobreza e fome — subproduto da concentracao da riqueza e da injustica. Um homem trabalharia o dia inteiro para comprar um litro de trigo. Os fieis preferem a morte a aceitar a marca da besta e nao poder comprar nem vender</td>
+        </tr>
+        <tr>
+            <td>Amarelo</td>
+            <td>Morte — espada, fome, pestilencia e feras da terra. Um quarto da humanidade atingida. Nao e apenas um evento futuro; e a realidade de toda a historia humana sob o juizo de Deus</td>
+        </tr>
+    </table>
+    <p>Hernandes Dias Lopes: "O Cordeiro governa! Todos os eventos acontecem porque Ele conhece, determina, permite e controla. Ate os inimigos estao debaixo da autoridade do Cordeiro."</p>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
+</div>
+
+<!-- PG 4 O 5º SELO E OS MARTIRES -->
+<div class="lbl">Pagina 4 &middot; O Quinto Selo — Os Martires sob o Altar</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">4</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. III</span><span class="pht">Os Martires e o 6o Selo</span></div>
+    <h2>Os Martires sob o Altar</h2>
+    <h3>O Quinto Selo — Ap 6:9-11</h3>
+    <p>Quando o quinto selo e aberto, Joao ve almas debaixo do altar — os martires mortos pela Palavra de Deus. Eles clamam: "Ate quando, Senhor?" Nao e um grito de desespero — e uma oracao de justicia. Eles confiam na santidade e na veracidade de Deus. A resposta de Deus nao e uma data — e uma veste branca e o pedido para "repousar ainda um pouco." O juizo vira no tempo certo; a espera tem um proposito soberano.</p>
+    <div class="blteo">
+        <div class="blteo-t">A Pergunta que a Igreja Perseguida Faz</div>
+        <p>Hernandes Dias Lopes conecta o clamor dos martires ao presente: "O maior numero de martires da historia foi morto no seculo XX." Hoje, em dezenas de paises, cristaos sao mortos pela fe. O clamor "ate quando?" nao e apenas a voz dos martires do seculo I — e a voz da Igreja em perseguicao em todas as epocas. E a oracao mais honesta que um crente sofredor pode orar.</p>
+    </div>
+    <h3>O Sexto Selo — O Mundo em Panico — Ap 6:12-17</h3>
+    <p>Com o sexto selo, os impios enfrentam o terror do Deus irado — reis, ricos, poderosos e escravos buscam esconder-se entre as rochas e os montes. E o primeiro instinto do pecador desde o Eden: esconder-se de Deus. Warren Wiersbe: "A ira de Deus e a evidencia do Seu santo amor por tudo o que e certo e o Seu santo repudio por tudo que e mau." William Barclay: "o maior temor do pecador nao e a morte, mas a manifestacao plena da presenca de Deus."</p>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
+</div>
+
+<!-- PG 5 OS SELADOS E A MULTIDAO -->
+<div class="lbl">Pagina 5 &middot; Os Selados e a Multidao Incontavel</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">5</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. III</span><span class="pht">Apocalipse 7</span></div>
+    <h2>Os Selados e a Multidao da Gloria</h2>
+    <p class="cap">Apocalipse 7 responde a pergunta do capitulo 6: "Quem podera suster-se diante do Deus irado?" A resposta biblica e clara: aqueles que foram selados como propriedade de Deus. O capitulo 7 funciona como um interludio de esperanca entre o sexto e o setimo selos.</p>
+    <div class="bloco">
+        <div class="bloco-t">O Selo de Deus — Tres Significados</div>
+        <p>William Hendriksen identifica tres dimensoes do selo: <strong>Protecao</strong> — o que esta selado nao pode ser violado. <strong>Propriedade</strong> — somos propriedade exclusiva de Deus, marcados como Seus. Quem toca o selado toca o Seu Dono. <strong>Genuinidade</strong> — o que esta selado nao pode ser adulterado. O Espirito Santo e o selo e o penhor da nossa redencao (Ef 1:13-14).</p>
+    </div>
+    <h3>A Multidao Incontavel — Ap 7:9-17</h3>
+    <p>Depois dos 144.000 selados (Israel espiritual contado do ponto de vista de Deus), Joao ve uma multidao que ninguem pode numerar — de todas as nacoes, tribos, povos e linguas, vestidos de branco com palmas nas maos. E a mesma Igreja vista de angulo diferente: do ponto de vista da terra e incontavel. Do ponto de vista do ceu e 144.000 — completa, sem nenhum faltando.</p>
+    <p>Hernandes Dias Lopes descreve as seis glorias dessa Igreja na gloria: <strong>inumeravel</strong> — cumprimento da promessa a Abraao; <strong>universal</strong> — de todas as culturas e linguas; <strong>honrada</strong> — em pe diante do trono do Cordeiro; <strong>pura</strong> — lavada no sangue do Cordeiro; <strong>vencedora</strong> — com palmas de vitoria; <strong>grata</strong> — "a salvacao e de Deus e do Cordeiro" (7:10).</p>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
+</div>
+
+<!-- PG 6 APLICACAO -->
+<div class="lbl">Pagina 6 &middot; Aplicacao</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">6</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. III</span><span class="pht">Os Selos e os Selados</span></div>
+    <h2>Aplicacao Direta</h2>
+    <p class="cap">Os quatro cavaleiros nao sao apenas profecia do futuro — sao a descricao da historia humana em curso. O evangelismo que avanca (branco), a perseguicao que acompanha (vermelho), a pobreza que oprime (preto) e a morte que ameaca (amarelo) — sao realidades do presente para a Igreja global. Mas a Igreja selada por Deus atravessa tudo isso protegida.</p>
+    <div class="blapl">
+        <div class="blapl-t">Para esta semana</div>
+        <p>Primeiro: Os martires sob o altar clamam "ate quando?" — e recebem uma veste branca e um chamado a esperar. Ha uma situacao de injustica ou sofrimento em sua vida onde voce esta clamando "ate quando?" Como a resposta de Deus aos martires — nao uma data, mas uma veste e uma promessa — fala a sua propria situacao? Segundo: O Espirito Santo e o selo de Deus em voce (Ef 1:13-14). Isso significa que voce e propriedade exclusiva de Deus — o diabo nao pode tocar o que esta selado. Como essa certeza muda sua coragem diante das pressoes espirituais que voce enfrenta? Terceiro: A multidao incontavel de "toda nacao, tribo, povo e lingua" e a Igreja que voce vai encontrar na eternidade. Isso muda como voce ve os cristaos de outras denominacoes, culturas e contextos ao seu redor?</p>
+    </div>
+    <div class="mem">
+        <div class="mem-t">&#9670; Versiculo para Memorizar</div>
+        <p>"Estes sao os que vem da grande tribulacao, e lavaram as suas vestiduras e as branquearam no sangue do Cordeiro."</p>
+        <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Apocalipse 7:14</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
+</div>
+
+<!-- PG 7 QUESTOES -->
+<div class="lbl">Pagina 7 &middot; Questoes e Anotacoes</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">7</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. III</span><span class="pht">Selos e Selados</span></div>
+    <h2>Questoes para Reflexao</h2>
+    <div class="q">
+        <div class="qn">Questao 01</div>
+        <div class="qt">Hernandes Dias Lopes interpreta o cavaleiro do cavalo branco como o Cristo vencedor — o evangelho avancando. Isso significa que guerras, fome e morte (os outros tres cavaleiros) sao parte da era da Igreja, nao apenas de um periodo futuro. Como essa interpretacao muda sua compreensao do sofrimento presente da Igreja no mundo?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 02</div>
+        <div class="qt">Os martires debaixo do altar clamam "ate quando?" — e recebem uma veste branca e a instrucao de esperar. Por que Deus nao responde com uma data? O que a veste branca e o chamado a esperar revelam sobre a forma como Deus consola e sustenta os que sofrem injustamente?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 03</div>
+        <div class="qt">Hernandes Dias Lopes diz que a Igreja sera preservada <em>na</em> tribulacao, nao <em>da</em> tribulacao. Como essa distincao e importante para a fe pratica? Qual e a diferenca entre uma fe que espera ser livrada do sofrimento e uma fe que confia em ser sustentada dentro dele?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 04</div>
+        <div class="qt">A multidao incontavel de Apocalipse 7 vem "da grande tribulacao" — sao pessoas que sofreram, mas chegaram lavadas no sangue do Cordeiro. Como essa visao do destino final dos redimidos — que vem do sofrimento para a gloria — sustenta a perseveranca da Igreja hoje?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <h3 style="margin-top:12px;">Anotacoes</h3>
+    <div class="lins">
+        <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">7</span></div>
+</div>
+
+</div>
+<script>
+let edit=false;
+const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM','TD','TH'];
+function toggleEdit(){
+    edit=!edit;
+    document.querySelectorAll('.pag *').forEach(el=>{
+        if(TAGS.includes(el.tagName)&&!el.querySelector('div,p,h2,h3,ul,table'))
+            el.contentEditable=edit?'true':'false';
+    });
+    document.getElementById('etxt').textContent=edit?'Concluir':'Editar';
+}
+</script>
+</body>
+</html>
