@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eschaton Vol.3 · Licao 08 — Os Salvos, os Julgados e as Tacas da Ira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cor:#a02828;--grad1:#180808;--grad2:#280a08;--ouro:#c9a84c;--ouro-claro:#e8d5a0;--vermelho:#8b1a1a;--ct:#2a2a2a;--branco:#fdfbf7;--perg:#f8f0e0;--creme:#f0e4cc;--cc:#ddd0c0;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#110404;font-family:'EB Garamond',Georgia,serif;}
+.painel{position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(90deg,#080202,#110404);border-bottom:1px solid rgba(160,40,40,0.5);padding:10px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.marca{font-family:'Cinzel',serif;font-size:11pt;color:var(--ouro);letter-spacing:3px;margin-right:auto;}
+.marca span{font-family:'Oswald',sans-serif;font-size:7.5pt;color:#666;letter-spacing:1px;display:block;font-weight:300;}
+.btn{font-family:'Oswald',sans-serif;font-size:9pt;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;padding:7px 16px;border-radius:2px;transition:all 0.2s;white-space:nowrap;}
+.be{background:transparent;color:var(--ouro);border:1px solid rgba(201,168,76,0.4);}.be:hover{background:var(--ouro);color:#111;}
+.bi{background:var(--vermelho);color:#fff;}.bi:hover{filter:brightness(1.2);}
+.bv{background:transparent;color:#666;border:1px solid #333;font-size:8pt;}.bv:hover{color:#fff;border-color:#555;}
+.area{margin-top:60px;padding:24px 16px 60px;display:flex;flex-direction:column;align-items:center;gap:16px;}
+@page{size:A5 portrait;margin:0;}
+.pag{width:148mm;min-height:210mm;background:var(--perg);box-shadow:0 6px 30px rgba(0,0,0,0.6);position:relative;overflow:hidden;page-break-after:always;flex-shrink:0;}
+.lbl{font-family:'Oswald',sans-serif;font-size:8pt;color:#555;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;margin-left:calc(50% - 74mm);margin-bottom:-8px;}
+.capa{background:linear-gradient(160deg,var(--grad1),var(--grad2));display:flex;flex-direction:column;justify-content:flex-end;min-height:210mm;padding:0;}
+.catm{position:absolute;inset:0;background:radial-gradient(ellipse at 22% 60%,rgba(160,40,40,0.5) 0%,transparent 55%),radial-gradient(ellipse at 78% 20%,rgba(201,168,76,0.18) 0%,transparent 45%);}
+.cgrd{position:absolute;inset:0;opacity:0.025;background-image:repeating-linear-gradient(45deg,rgba(201,168,76,0.8) 0px,transparent 1px,transparent 28px,rgba(201,168,76,0.8) 29px);}
+.cfx{position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#280808,var(--cor),var(--ouro));}
+.cnbg{position:absolute;bottom:-20px;right:-10px;font-family:'Cinzel',serif;font-size:130pt;font-weight:900;color:rgba(255,255,255,0.03);line-height:1;user-select:none;}
+.cimg{position:absolute;top:0;left:0;right:0;height:58%;background:linear-gradient(160deg,#0d0404,var(--cor) 50%,#ff8080);opacity:0.38;}
+.clh{position:absolute;top:55%;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.75;}
+.cvol{position:absolute;top:14mm;right:12mm;z-index:4;text-align:right;}
+.cvol-num{font-family:'Cinzel',serif;font-size:8pt;color:var(--ouro);letter-spacing:3px;opacity:0.7;}
+.cvol-linha{width:40px;height:1px;background:rgba(201,168,76,0.4);margin:4px 0 0 auto;}
+.ccon{position:relative;z-index:3;padding:0 12mm 14mm 18mm;}
+.cser{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:4px;color:var(--ouro);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.cser::before{content:'';display:block;width:20px;height:1px;background:var(--ouro);}
+.ctit{font-family:'Cinzel',serif;font-size:15pt;font-weight:700;color:#fff;line-height:1.1;text-transform:uppercase;margin-bottom:10px;}
+.cref{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;color:rgba(201,168,76,0.6);text-transform:uppercase;margin-bottom:10px;}
+.cver{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:var(--ouro-claro);line-height:1.6;border-left:2px solid var(--ouro);padding-left:10px;opacity:0.9;}
+.int{padding:14mm 12mm 18mm 14mm;min-height:210mm;position:relative;background:var(--perg);}
+.int::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--cor),var(--ouro) 60%,transparent);}
+.int::after{content:'';position:absolute;top:6px;left:14mm;right:12mm;height:1px;background:rgba(160,40,40,0.15);}
+.int-linhas{position:absolute;inset:0;top:20mm;pointer-events:none;background-image:repeating-linear-gradient(transparent,transparent 23px,rgba(160,40,40,0.045) 23px,rgba(160,40,40,0.045) 24px);z-index:0;}
+.wm{position:absolute;bottom:14mm;right:10mm;font-family:'Cinzel',serif;font-size:52pt;font-weight:900;color:rgba(0,0,0,0.03);line-height:1;user-select:none;pointer-events:none;}
+.ph{margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--cc);display:flex;justify-content:space-between;align-items:baseline;position:relative;z-index:1;}
+.phl{font-family:'Oswald',sans-serif;font-size:7.5pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;}
+.pht{font-family:'EB Garamond',serif;font-style:italic;font-size:8.5pt;color:#aaa;}
+h2{font-family:'Cinzel',serif;font-weight:700;font-size:13pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);border-bottom:2px solid var(--cor);padding-bottom:6px;margin-bottom:12px;margin-top:4px;line-height:1.2;position:relative;z-index:1;}
+h3{font-family:'Oswald',sans-serif;font-weight:400;font-size:10pt;letter-spacing:1.5px;color:#5a1010;text-transform:uppercase;margin-bottom:6px;margin-top:12px;position:relative;z-index:1;}
+p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--ct);text-align:justify;margin-bottom:9px;hyphens:auto;position:relative;z-index:1;}
+.cap::first-letter{font-family:'Cinzel',serif;font-size:38pt;font-weight:900;float:left;margin-right:5px;color:var(--cor);line-height:0.82;padding-top:2px;}
+.bver{background:#fff;border:1px solid rgba(160,40,40,0.2);border-left:4px solid var(--cor);padding:10px 12px;margin:12px 0;position:relative;z-index:1;}
+.bver-ref{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.bver p{font-family:'EB Garamond',serif;font-style:italic;font-size:10.5pt;color:#2a0808;line-height:1.7;margin:0;}
+.bver .ref-f{font-size:9pt;font-style:normal;color:var(--ouro);font-family:'Oswald',sans-serif;letter-spacing:1px;display:block;text-align:right;margin-top:4px;}
+.bloco{background:rgba(160,40,40,0.05);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-t{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.blteo{background:rgba(201,168,76,0.08);border-left:3px solid var(--ouro);padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.blteo-t{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;}
+.blapl{background:linear-gradient(135deg,rgba(160,40,40,0.05),rgba(201,168,76,0.07));border:1px solid rgba(160,40,40,0.2);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.blapl-t{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.mem{background:var(--creme);border:1px solid rgba(201,168,76,0.3);border-radius:2px;padding:10px 12px;margin:10px 0;text-align:center;position:relative;z-index:1;}
+.mem-t{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:6px;}
+.mem p{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:#2a0808;text-align:center;line-height:1.6;}
+.obj{background:var(--creme);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.obj ul{list-style:none;padding:0;}
+.obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
+.obj ul li::before{content:'&#9670;';position:absolute;left:0;color:var(--cor);font-size:7pt;top:4px;}
+.sep{display:flex;align-items:center;gap:10px;margin:12px 0;opacity:0.3;position:relative;z-index:1;}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:var(--cor);}
+.sep span{font-size:8pt;color:var(--ouro);}
+.q{margin-bottom:14px;position:relative;z-index:1;}
+.qn{font-family:'Oswald',sans-serif;font-size:8pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.qt{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.45;margin-bottom:5px;}
+.lr{border-bottom:1px solid rgba(160,40,40,0.2);height:20px;margin-top:3px;}
+.rod{position:absolute;bottom:0;left:0;right:0;padding:6px 12mm 6mm 14mm;display:flex;justify-content:space-between;align-items:center;z-index:2;}
+.rod::before{content:'';position:absolute;top:0;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.3;}
+.rt{font-family:'Oswald',sans-serif;font-size:7pt;color:#aaa;letter-spacing:1px;text-transform:uppercase;}
+.rn{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);}
+.lins{display:flex;flex-direction:column;gap:18px;margin-top:10px;position:relative;z-index:1;}
+.lin{border-bottom:1px solid rgba(160,40,40,0.2);height:22px;}
+[contenteditable="true"]{outline:none;cursor:text;}
+[contenteditable="true"]:hover{background:rgba(160,40,40,0.05);border-radius:2px;}
+[contenteditable="true"]:focus{background:rgba(160,40,40,0.08);border-radius:2px;}
+@media print{
+    body{background:none;}
+    .painel,.lbl{display:none!important;}
+    .area{margin-top:0;padding:0;gap:0;}
+    .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
+    .wm,.int-linhas{display:none;}
+}
+</style>
+</head>
+<body>
+<div class="painel">
+    <div class="marca">ESCHATON VOL. III<span>Licao 08 &middot; Os Salvos, os Julgados e as Tacas da Ira</span></div>
+    <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
+    <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
+    <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
+</div>
+<div class="area">
+
+<!-- PG 1 CAPA -->
+<div class="lbl">Pagina 1 &middot; Capa</div>
+<div class="pag capa">
+    <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
+    <div class="cimg"></div><div class="clh"></div>
+    <div class="cnbg">08</div>
+    <div class="cvol"><div class="cvol-num">VOL. III</div><div class="cvol-linha"></div></div>
+    <div class="ccon">
+        <div class="cser">Eschaton &middot; O Futuro Chegou</div>
+        <div class="cref">Apocalipse 14:1-20 &middot; 15:1-8 &middot; 16:1-21</div>
+        <div class="ctit">Os Salvos, os Julgados e as Tacas da Ira</div>
+        <div class="cver">
+            "Qualquer interpretacao da mensagem do Novo Testamento que nao inclua a ira de Deus esta atenuada e mutilada. A ira de Deus nao e uma emocao humana; e a reacao preestabelecida de Sua santidade a pecaminosidade e rebeliao humanas."
+            <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">George Ladd — citado por H. D. Lopes</span>
+        </div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">1</span></div>
+</div>
+
+<!-- PG 2 TEXTO BIBLICO -->
+<div class="lbl">Pagina 2 &middot; Texto Biblico</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">2</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. III</span><span class="pht">Ap 14-16</span></div>
+    <h2>O Texto</h2>
+    <div class="bver">
+        <div class="bver-ref">Apocalipse 14:6-7, 13</div>
+        <p>"E vi outro anjo voar pelo meio do ceu, tendo o evangelho eterno para o proclamar aos que habitam sobre a terra... dizendo em grande voz: Temei a Deus, e dai-lhe gloria, porque chegou a hora do seu juizo... E ouvi uma voz do ceu, dizendo: Escreve: Bem-aventurados os mortos que desde agora morrem no Senhor."</p>
+        <span class="ref-f">Apocalipse 14:6-7, 13</span>
+    </div>
+    <div class="bver">
+        <div class="bver-ref">Apocalipse 15:3-4</div>
+        <p>"E cantavam o cantico de Moises, servo de Deus, e o cantico do Cordeiro, dizendo: Grandes e maravilhosas sao as tuas obras, Senhor Deus Todo-Poderoso; justos e verdadeiros sao os teus caminhos, o Rei dos santos. Quem nao te temera, o Senhor, e nao glorificara o teu nome?"</p>
+        <span class="ref-f">Apocalipse 15:3-4</span>
+    </div>
+    <div class="obj">
+        <div class="ot">Objetivos desta licao</div>
+        <ul>
+            <li>Contemplar a Igreja vitoriosa no Monte Siao contrastando com os adoradores da besta</li>
+            <li>Examinar o "evangelho eterno" proclamado antes do juizo — a ultima misericordia de Deus</li>
+            <li>Compreender a diferenca entre trombetas (aviso) e tacas (consumacao da ira)</li>
+            <li>Aplicar a bem-aventuranca dos que morrem no Senhor a coragem diante da morte</li>
+        </ul>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">2</span></div>
+</div>
+
+<!-- PG 3 A IGREJA NO MONTE SIAO -->
+<div class="lbl">Pagina 3 &middot; A Igreja no Monte Siao — Ap 14</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">3</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. III</span><span class="pht">Os Salvos</span></div>
+    <h2>A Igreja Vitoriosa no Monte Siao</h2>
+    <p class="cap">Apocalipse 14 encerra a quarta secao paralela do livro. Cada secao cobre o periodo completo da primeira a segunda vinda de Cristo, e termina com a cena do juizo final. Mas antes do juizo, Apocalipse 14 oferece um panorama glorioso da Igreja com o Cordeiro — em contraste nítido com os adoradores da besta.</p>
+    <div class="bloco">
+        <div class="bloco-t">Os Dois Grupos em Contraste</div>
+        <p>A humanidade esta nitidamente dividida em Apocalipse 14. De um lado, os 144.000 (a totalidade dos remidos) no Monte Siao com o Cordeiro — cantando um cantico novo, puros, sem mentira na boca, sem macula. Do outro lado, os adoradores da besta — marcados, destinados ao calice da ira de Deus sem mistura, ao tormento eterno. Nao ha terceira categoria. A pergunta de Apocalipse nao e se Satanas sera vencido — e de qual lado cada pessoa estara quando o Cordeiro triunfar.</p>
+    </div>
+    <h3>O Evangelho Eterno — Ap 14:6-7</h3>
+    <p>Antes de proclamar o juizo, Deus envia um anjo com o "evangelho eterno" para toda tribo, lingua, povo e nacao — com o chamado ao arrependimento e a adoracao. Hernandes Dias Lopes: "Antes do juizo, Deus alerta, avisa e conclama ao arrependimento. As trombetas do juizo sempre visaram levar o homem ao arrependimento." O "evangelho eterno" e a ultima misericordia de Deus antes da consumacao da ira. Deus nunca pune sem antes avisar.</p>
+    <h3>A Bem-Aventuranca dos Mortos em Cristo — Ap 14:13</h3>
+    <p>Em contraste com o tormento eterno dos adoradores da besta (14:11), os que morrem no Senhor sao declarados bem-aventurados. Eles descansam. Suas obras os acompanham. Nao vagam, nao vao para o purgatorio — vao para a presenca de Cristo. "Aqueles que morrem em Cristo nao morrem, dormem." E melhor suportar perseguicao pacientemente do que escapar agora e ser atormentado por toda a eternidade.</p>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
+</div>
+
+<!-- PG 4 AS TACAS DA IRA -->
+<div class="lbl">Pagina 4 &middot; As Tacas da Ira — Ap 15-16</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">4</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. III</span><span class="pht">As Tacas da Ira</span></div>
+    <h2>As Sete Tacas — A Ira Consumada</h2>
+    <p>Antes das tacas, Deus mostra a Igreja vitoriosa no ceu cantando o cantico de Moises e o cantico do Cordeiro (Ap 15:3-4). O novo Exodo cosmico esta prestes a consumar-se. Os anjos saem do santuario cheio da fumaca da gloria de Deus — inacessivel ate que as tacas sejam completadas.</p>
+    <div class="bloco">
+        <div class="bloco-t">Trombetas x Tacas — A Diferenca Crucial</div>
+        <p>Hernandes Dias Lopes, seguindo William Hendriksen: <strong>Trombetas</strong> (Ap 8-11) — a ira de Deus misturada com misericordia, afetando "um terco" da criacao. Sao alertas progressivos com espaco para arrependimento. <strong>Tacas</strong> (Ap 15-16) — a ira de Deus sem mistura, sem reducao, sem interludio. A oportunidade de arrependimento esta esgotada. Quem se recusou a ser admoestado pelas trombetas e destruido pelas tacas. "Deus sempre adverte antes de finalmente punir" — diluvio, Sodoma, Egito, Jerusalem, juizo final.</p>
+    </div>
+    <h3>A Resposta dos Impios — Blasfemia</h3>
+    <p>Diante de cada taca, os impios respondem com blasfemia — nao com arrependimento. George Ladd: "A ira de Deus nao e uma emocao humana; e a reacao preestabelecida de Sua santidade a pecaminosidade e rebeliao humanas." E uma ira santa, justa, consistente. Os impios "reconheceram tratar-se de uma acao divina; mas seus coracoes sao tao endurecidos que, ao inves de caírem de joelhos, blasfemam."</p>
+    <p>Hernandes Dias Lopes: "Os homens nao sao santificados por meio do sofrimento; ao contrario, se fazem ainda mais iniquos. Existe somente um unico caminho de volta para Deus: 'ninguem vem ao Pai senao por mim', disse Jesus. Quem nao vem pela graca, nao vem de modo algum."</p>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
+</div>
+
+<!-- PG 5 MENSAGEM PARA HOJE -->
+<div class="lbl">Pagina 5 &middot; Mensagem para Hoje</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">5</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. III</span><span class="pht">Mensagem para Hoje</span></div>
+    <h2>Duas Questoes Urgentes</h2>
+    <div class="blteo">
+        <div class="blteo-t">A Pergunta que nao Pode Ser Evitada</div>
+        <p>Hernandes Dias Lopes finaliza o capitulo sobre Apocalipse 11 com uma pergunta que atravessa todo o livro: "Quem voce e? Santuario de Deus ou atio exterior? Testemunha fiel ou amante do mundo? Onde voce estara quando a setima trombeta tocar? Voce estara no santuario aberto de Deus ou atormentado pelos flagelos? O tempo da oportunidade e agora. Amanha pode ser tarde demais."</p>
+    </div>
+    <h3>O Evangelho Eterno Ainda Esta Sendo Pregado</h3>
+    <p>O anjo de Apocalipse 14:6 voa "pelo meio do ceu" proclamando o evangelho eterno — a convocacao ao arrependimento antes do juizo. Isso ainda esta acontecendo. A Igreja e o instrumento pelo qual Deus ancora esse convite a "toda tribo, lingua, povo e nacao." O tempo entre o "evangelho eterno" e as "tacas da ira" e exatamente o tempo que vivemos — a era da Igreja, o tempo da graca.</p>
+    <h3>A Ira de Deus e Boa Noticia</h3>
+    <p>Isso parece um paradoxo, mas e biblico: a ira de Deus e boa noticia para os que sofreram injustica. Martyn Lloyd-Jones: "Quando o diabo nao consegue desanimar o povo de Deus por meio de perseguicao ativa, ele tem conseguido afasta-lo por meio das seducoes do mundo." A certeza de que Deus e juiz e que a ira atingira os que perseguiram e mentiram e o que sustenta o crente sofredor — e o que liberta o perseguido da necessidade de se vingar.</p>
+    <div class="bver">
+        <div class="bver-ref">Apocalipse 14:12-13</div>
+        <p>"Aqui esta a paciencia dos santos, os que guardam os mandamentos de Deus e a fe em Jesus. E ouvi uma voz do ceu, dizendo: Escreve: Bem-aventurados os mortos que desde agora morrem no Senhor."</p>
+        <span class="ref-f">Apocalipse 14:12-13</span>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
+</div>
+
+<!-- PG 6 APLICACAO -->
+<div class="lbl">Pagina 6 &middot; Aplicacao</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">6</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. III</span><span class="pht">Os Salvos e os Julgados</span></div>
+    <h2>Aplicacao Direta</h2>
+    <p class="cap">Apocalipse 14 coloca dois grupos em contraste absoluto: os que cantam com o Cordeiro no Monte Siao, e os que beberao o calice da ira de Deus sem mistura. Nao ha neutralidade. O cantico dos remidos e aprendido por experiencia — nao por instrucao — porque e o cantico de quem foi redimido pelo sangue do Cordeiro. So os remidos o conhecem. Voce sabe esse cantico?</p>
+    <div class="blapl">
+        <div class="blapl-t">Para esta semana</div>
+        <p>Primeiro: Deus envia o "evangelho eterno" antes de despejar as tacas da ira — porque Ele quer que todos se arrependam (2 Pe 3:9). Ha alguem ao seu redor que ainda nao ouviu o evangelho claramente? A certeza do juizo vindouro deveria intensificar — nao paralisar — seu testemunho. Segundo: "Bem-aventurados os mortos que desde agora morrem no Senhor" — suas obras os acompanham (14:13). O que voce esta fazendo agora que tera peso eterno? Que obras de fidelidade, amor e testemunho serao suas "obras que os acompanham"? Terceiro: A diferenca entre trombetas e tacas e a diferenca entre advertencia e consumacao. Voce esta respondendo as "trombetas" de Deus na sua vida — as dificuldades que convocam ao arrependimento — ou as ignorando ate que nao haja mais espaco?</p>
+    </div>
+    <div class="mem">
+        <div class="mem-t">&#9670; Versiculo para Memorizar</div>
+        <p>"Bem-aventurados os mortos que desde agora morrem no Senhor. Sim, diz o Espirito, descansarao dos seus trabalhos, porque as suas obras os acompanham."</p>
+        <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Apocalipse 14:13</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
+</div>
+
+<!-- PG 7 QUESTOES -->
+<div class="lbl">Pagina 7 &middot; Questoes e Anotacoes</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">7</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. III</span><span class="pht">Ap 14-16</span></div>
+    <h2>Questoes para Reflexao</h2>
+    <div class="q">
+        <div class="qn">Questao 01</div>
+        <div class="qt">Apocalipse 14 mostra dois grupos em contraste total: os 144.000 cantando com o Cordeiro, e os adoradores da besta destinados ao tormento eterno. Hernandes Dias Lopes diz que "nao ha terceira categoria." Como essa visao biblica da humanidade dividida em dois grupos — nao em um espectro gradual — muda a urgencia do testemunho cristao?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 02</div>
+        <div class="qt">Deus envia o "evangelho eterno" imediatamente antes de proclamar o juizo — porque "Deus sempre adverte antes de finalmente punir." Como esse padrao biblico (diluvio, Sodoma, Egito, Jerusalem, juizo final) revela o carater de Deus? O que isso diz sobre a natureza da graca e da misericordia divinas?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 03</div>
+        <div class="qt">A diferenca entre trombetas (ira misturada com misericordia) e tacas (ira sem mistura) sugere que ha um tempo para a conversao e um momento em que esse tempo se esgota. Como essa realidade deve moldar a postura do cristao diante das pessoas ao seu redor que ainda nao responderam ao evangelho?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 04</div>
+        <div class="qt">"Bem-aventurados os mortos que morrem no Senhor — suas obras os acompanham" (14:13). Que obras suas voce gostaria que o acompanhassem? Se voce morresse hoje, quais seriam as "obras que acompanham" — acoes de fidelidade, amor e testemunho que definem sua vida crista pratica?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <h3 style="margin-top:12px;">Anotacoes</h3>
+    <div class="lins">
+        <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. III &middot; EBD Jovens Adultos</span><span class="rn">7</span></div>
+</div>
+
+</div>
+<script>
+let edit=false;
+const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM'];
+function toggleEdit(){
+    edit=!edit;
+    document.querySelectorAll('.pag *').forEach(el=>{
+        if(TAGS.includes(el.tagName)&&!el.querySelector('div,p,h2,h3,ul'))
+            el.contentEditable=edit?'true':'false';
+    });
+    document.getElementById('etxt').textContent=edit?'Concluir':'Editar';
+}
+</script>
+</body>
+</html>
